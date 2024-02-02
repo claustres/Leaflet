@@ -1,4 +1,6 @@
 import {Evented, Class, Util, FeatureGroup, Marker} from 'leaflet';
+import sinon from 'sinon';
+import {expect} from 'chai';
 
 describe('Events', () => {
 	describe('#fireEvent', () => {

@@ -1,5 +1,7 @@
 import {DomUtil, Map, Control} from 'leaflet';
 import {createContainer, removeMapContainer} from '../SpecHelper.js';
+import sinon from 'sinon';
+import {expect} from 'chai';
 
 describe('Control', () => {
 	function onAdd() {

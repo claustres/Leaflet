@@ -1,4 +1,5 @@
 import {point, latLng, Browser} from 'leaflet';
+import chai from 'chai';
 
 chai.util.addMethod(chai.Assertion.prototype, 'near', function (expected, delta = 1) {
 	expected = point(expected);
@@ -46,8 +47,5 @@ export function removeMapContainer(map, container) {
 		document.body.removeChild(container);
 	}
 }
-
-console.log('Browser.pointer', Browser.pointer);
-console.log('Browser.touchNative', Browser.touchNative);
 
 export const pointerType = Browser.touchNative ? 'touch' : 'mouse';

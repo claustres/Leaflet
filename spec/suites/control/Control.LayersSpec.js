@@ -1,6 +1,8 @@
 import {Control, Map, Marker, TileLayer, Util} from 'leaflet';
 import UIEventSimulator from 'ui-event-simulator';
 import {createContainer, pointerType, removeMapContainer} from '../SpecHelper.js';
+import sinon from 'sinon';
+import {expect} from 'chai';
 
 describe('Control.Layers', () => {
 	let container, map;
@@ -259,7 +261,7 @@ describe('Control.Layers', () => {
 			// Need to create a DIV with specified height and insert it into DOM, so that the browser
 			// gives it an actual size.
 			map.remove();
-			container.style.height = container.style.width = '200px';
+			container.style.height = container.style.width = '100px';
 			map = new Map(container);
 
 			for (; i < 20; i += 1) {
@@ -281,7 +283,7 @@ describe('Control.Layers', () => {
 			// Need to create a DIV with specified height and insert it into DOM, so that the browser
 			// gives it an actual size.
 			map.remove();
-			container.style.height = container.style.width = '200px';
+			container.style.height = container.style.width = '100px';
 			map = new Map(container);
 
 			layersCtrl.addTo(map);
