@@ -7,7 +7,8 @@ export default {
 			inject: {
 				importMap: {
 					imports: {
-						'leaflet': '/src/Leaflet.js'
+						'leaflet': '/src/Leaflet.js',
+						'chai': 'https://cdn.jsdelivr.net/npm/@esm-bundle/chai/esm/chai.js'
 					},
 				},
 			},
