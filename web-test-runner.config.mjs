@@ -8,7 +8,7 @@ export default {
 				importMap: {
 					imports: {
 						'leaflet': '/src/Leaflet.js',
-						'chai': 'https://cdn.jsdelivr.net/npm/@esm-bundle/chai/esm/chai.js'
+						'chai': '/node_modules/chai/chai.js'
 					},
 				},
 			},
