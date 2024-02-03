@@ -1,4 +1,5 @@
-import {DomEvent, Browser, Util, extend} from 'leaflet';
+import {expect} from 'chai';
+import {Browser, DomEvent, Util, extend} from 'leaflet';
 import UIEventSimulator from 'ui-event-simulator';
 
 describe('DomEvent.Pointer', () => {

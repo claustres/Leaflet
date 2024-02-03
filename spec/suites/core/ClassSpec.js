@@ -1,6 +1,6 @@
+import {expect} from 'chai';
 import {Class} from 'leaflet';
 import sinon from 'sinon';
-import {expect} from 'chai';
 
 describe('Class', () => {
 	describe('#extend', () => {

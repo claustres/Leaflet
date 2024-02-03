@@ -1,8 +1,8 @@
+import {expect} from 'chai';
 import {Control, Map, Marker, TileLayer, Util} from 'leaflet';
+import sinon from 'sinon';
 import UIEventSimulator from 'ui-event-simulator';
 import {createContainer, pointerType, removeMapContainer} from '../SpecHelper.js';
-import sinon from 'sinon';
-import {expect} from 'chai';
 
 describe('Control.Layers', () => {
 	let container, map;

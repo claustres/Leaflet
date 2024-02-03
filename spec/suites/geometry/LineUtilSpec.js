@@ -1,4 +1,6 @@
-import {Bounds, point, LineUtil, latLng, Map, polyline} from 'leaflet';
+import {expect} from 'chai';
+import {Bounds, LineUtil, Map, latLng, point, polyline} from 'leaflet';
+import sinon from 'sinon';
 
 describe('LineUtil', () => {
 	describe('#clipSegment', () => {

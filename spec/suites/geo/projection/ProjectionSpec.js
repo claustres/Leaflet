@@ -1,3 +1,4 @@
+import {expect} from 'chai';
 import {Projection, latLng, point} from 'leaflet';
 
 describe('Projection.Mercator', () => {

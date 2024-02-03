@@ -41,7 +41,7 @@
   "scripts": {
     "debug": "http-server -c-1",
     "docs": "node ./build/docs.mjs && node ./build/integrity.mjs",
-    "test": "web-test-runner \"spec/**/*.js\"",
+    "test": "web-test-runner \"spec/suites/**/*.js\"",
     "coverage": "npm run test -- --coverage",
     "build": "npm run rollup && npm run uglify",
     "lint": "eslint . --ext js,mjs,cjs",
