@@ -40,8 +40,8 @@
   "scripts": {
     "debug": "http-server -c-1",
     "docs": "node ./build/docs.mjs && node ./build/integrity.mjs",
-    "test": "karma start ./spec/karma.conf.js",
-    "coverage": "karma start ./spec/karma.conf.js --coverage --single-run",
+    "test": "web-test-runner \"spec/**/*.js\"",
+    "coverage": "npm run test -- --coverage",
     "build": "npm run rollup && npm run uglify",
     "lint": "eslint . --ext js,mjs,cjs",
     "lintfix": "npm run lint -- --fix",
