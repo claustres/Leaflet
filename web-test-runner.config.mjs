@@ -4,6 +4,7 @@ import {importMapsPlugin} from '@web/dev-server-import-maps';
 export default {
 	nodeResolve: true,
 	concurrency: 1,
+	concurrentBrowsers: 1,
 	testRunnerHtml: testFramework => `
 		<!doctype html>
 		<html lang="en">
