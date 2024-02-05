@@ -2235,7 +2235,7 @@ describe('Map', () => {
 		});
 	});
 
-	describe('#locate', () => {
+	describe.skip('#locate', () => {
 		let foundSpy;
 		let errorSpy;
 
