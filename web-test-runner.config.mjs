@@ -3,6 +3,7 @@ import {importMapsPlugin} from '@web/dev-server-import-maps';
 /** @type {import('@web/test-runner').TestRunnerConfig} */
 export default {
 	nodeResolve: true,
+	concurrency: 1,
 	testRunnerHtml: testFramework => `
 		<!doctype html>
 		<html lang="en">
