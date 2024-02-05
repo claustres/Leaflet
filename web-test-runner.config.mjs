@@ -12,6 +12,7 @@ export default {
 				<link rel="stylesheet" href="/dist/leaflet.css">
 			</head>
 			<body>
+				<script type="module" src="/spec/setup.js"></script>
 				<script type="module" src="${testFramework}"></script>
 			</body>
 		</html>
