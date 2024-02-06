@@ -1,5 +1,6 @@
 import {expect} from 'chai';
 import {Browser, DomEvent, Util, extend} from 'leaflet';
+import sinon from 'sinon';
 import UIEventSimulator from 'ui-event-simulator';
 
 describe('DomEvent.Pointer', () => {
