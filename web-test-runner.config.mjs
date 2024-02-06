@@ -2,7 +2,6 @@ import {importMapsPlugin} from '@web/dev-server-import-maps';
 
 /** @type {import('@web/test-runner').TestRunnerConfig} */
 export default {
-	nodeResolve: true,
 	testRunnerHtml: testFramework => `
 		<!doctype html>
 		<html lang="en">
@@ -22,8 +21,11 @@ export default {
 			inject: {
 				importMap: {
 					imports: {
+						'chai': '/node_modules/chai/chai.js',
 						'leaflet': '/src/Leaflet.js',
-						'chai': '/node_modules/chai/chai.js'
+						'prosthetic-hand': '/node_modules/prosthetic-hand/lib/Hand.js',
+						'sinon': '/node_modules/sinon/pkg/sinon-esm.js',
+						'ui-event-simulator': '/node_modules/ui-event-simulator/ui-event-simulator.js'
 					},
 				},
 			},
